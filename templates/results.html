@@ -34,7 +34,7 @@
     <h2 class="ui center aligned header">
       {% if session['prime'] == True %}
         <tr>
-          <td>prime</td>
+          <span title = "only factors are 1 and itself"><td><a href = "{{ url_for('type_page', type = 'prime') }}">prime</a></td></span>
         </tr>
       {% endif %}
     </h2>

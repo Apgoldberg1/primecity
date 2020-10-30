@@ -9,23 +9,24 @@
   </head>
 
   <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <img class="nav-link" alt = "prime city logo" src = "/static/pCityLogo.png"  width = "187" height = "72"><span class="sr-only">(current)</span></img>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/"><h1 style = "font-size:300%"> &nbsp; Home</h1><span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class='nav-item active'>
-                    <a class="nav-link" href="{{ url_for('result_page', number = 'random') }}"><h1 style = "font-size:300%">&nbsp; Random Prime</h1><span class="sr-only">(current)</span></a>
-                  </li>
-              </ul>
-          </div>
-        </nav>
-    </header>
+      <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <img class="nav-link" alt = "prime city logo" src = "/static/pCityLogo.png"  width = "187" height = "72"><span class="sr-only">(current)</span></img>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/"><h1 style = "font-size:300%"> &nbsp; Home</h1><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class='nav-item active'>
+                      <a class="nav-link" href="{{ url_for('result_page', number = 'random') }}"><h1 style = "font-size:300%">&nbsp; Random Prime</h1><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+      </header>
+
     <form  method="POST">
         <div class="ui center aligned container" style="margin-top: 30px">
           <div class="ui massive icon input">
