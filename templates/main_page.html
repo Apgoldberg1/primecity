@@ -14,10 +14,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                    <img class="nav-link" alt = "prime city logo" src = "/static/pCityLogo.png"  width = "187" height = "72"><span class="sr-only">(current)</span></img>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/"><h1 style = "font-size:300%"> &nbsp; Home</h1><span class="sr-only">(current)</span></a>
                   </li>
                   <li class='nav-item active'>
-                    <a class="nav-link" href="{{ url_for('result_page', number = 'random') }}">Prime<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ url_for('result_page', number = 'random') }}"><h1 style = "font-size:300%">&nbsp; Random Prime</h1><span class="sr-only">(current)</span></a>
                   </li>
               </ul>
           </div>
@@ -26,7 +29,7 @@
     <form  method="POST">
         <div class="ui center aligned container" style="margin-top: 30px">
           <div class="ui massive icon input">
-            <input type='number' name='numbercollect' placeholder='Input a prime number, leave blank for a random prime'></input>
+            <input type='number' name='numbercollect' placeholder='  Input a prime number' style="font-size:35px;"></input>
           </div>
           <br>
           <input class="ui massive icon input button" type='submit'></input>

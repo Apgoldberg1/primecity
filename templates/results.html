@@ -12,10 +12,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                    <img class="nav-link" alt = "prime city logo" src = "/static/pCityLogo.png" width = "187" height = "72"><span class="sr-only">(current)</span></img>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/"><h1 style = "font-size:300%"> &nbsp; Home </h1><span class="sr-only">(current)</span></a>
                   </li>
                   <li class='nav-item active'>
-                    <a class="nav-link" href="{{ url_for('result_page', number = 'random') }}">Prime<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ url_for('result_page', number = 'random') }}"><h1 style = "font-size:300%"> &nbsp; Random Prime </h1><span class="sr-only">(current)</span></a>
                   </li>
               </ul>
           </div>
@@ -173,20 +176,20 @@
     </h2>
 
     <h2 class="ui center aligned header">
-      {% if session['pierpont1'] == True %}
+      {% if session['pierpont1'] == True or session['pierpont2'] == True %}
         <tr>
-          <td>pierpont type 1 prime</td>
+          <td>pierpont prime</td>
         </tr>
       {% endif %}
     </h2>
 
-    <h2 class="ui center aligned header">
+    <!--<h2 class="ui center aligned header">
       {% if session['pierpont2'] == True %}
         <tr>
           <td>pierpont type 2 prime</td>
         </tr>
       {% endif %}
-    </h2>
+    </h2> -->
 
     <h2 class="ui center aligned header">
       {% if session['sexy'] == True %}
